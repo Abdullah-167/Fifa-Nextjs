@@ -1,16 +1,278 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200&display=swap');
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.nav span {
+  position: relative;
+  margin-right: 10px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.nav span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #DA6A2A;
+  transition: .3s;
+}
+
+.nav span:hover::before {
+  width: 100%;
+  background-color: #DA6A2A;
+}
+
+
+.links span {
+  position: relative;
+  margin-right: 10px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.links span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: RGB(40, 127, 184);
+  transition: .3s;
+  ;
+}
+
+.links span:hover::before {
+  width: 100%;
+  background-color: RGB(40, 127, 184);
+}
+
+.footer span {
+  position: relative;
+  margin-right: 10px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #DA6A2A;
+  transition: .3s;
+}
+
+.footer span:hover::before {
+  width: 100%;
+  background-color: #DA6A2A;
+}
+
+.menu {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+  background-color: #0E1E32;
+}
+
+.menu.open {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+
+.rotate {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-img {
+  position: relative;
+  background-image: url(../public/assets/stadium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  /* adjust the opacity as needed */
+}
+
+
+
+.nextslide {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: next 0.7s ease-in-out forwards;
+}
+
+@keyframes next {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.prev {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: previous 0.7s ease-in-out forwards;
+}
+
+@keyframes previous {
+  from {
+    opacity: 0;
+    transform: translateX(-42%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.bg-img2 {
+  position: relative;
+  background-image: url(../public/assets/net.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 140vh;
+  width: 100%;
+}
+
+.bg-img2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+.team-shadow {
+  box-shadow: -2px 7px 9px -4px rgba(153, 142, 142, 0.97);
+  -webkit-box-shadow: -2px 7px 9px -4px rgba(153, 142, 142, 0.97);
+  -moz-box-shadow: -2px 7px 9px -4px rgba(153, 142, 142, 0.97);
+}
+
+.joinus-shadow:hover {
+  box-shadow: -2px 7px 9px -4px rgba(153, 142, 142, 0.97);
+  -webkit-box-shadow: -2px 7px 9px -4px rgba(153, 142, 142, 0.97);
+  -moz-box-shadow: -2px 7px 9px -4px rgba(153, 142, 142, 0.97);
+}
+
+.features-bg {
+  background-image: url(../public/assets/football.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .nextslide {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: next 0.7s ease-in-out forwards;
+  }
+
+  @keyframes next {
+    from {
+      opacity: 0;
+      transform: translateX(6%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .prev {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: previous 0.7s ease-in-out forwards;
+  }
+
+  @keyframes previous {
+    from {
+      opacity: 0;
+      transform: translateX(-8%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .bg-img {
+    height: 70vh;
+  }
+
+  .bg-img2 {
+    height: 120vh;
+  }
 }
