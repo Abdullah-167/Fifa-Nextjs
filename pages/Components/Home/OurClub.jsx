@@ -3,9 +3,9 @@ import React from 'react'
 import Team from '../.../../../../public/assets/team.jpg'
 import { BsArrowRightShort } from 'react-icons/bs';
 
-const OurClub = ({bgImage }) => {
+const OurClub = () => {
     return (
-        <div className='bg-img2' style={{ backgroundImage: `url(${bgImage})` }}>
+        <div className='bg-img2'>
             <div className='container flex flex-wrap md:flex-nowrap gap-20 md:items-center justify-between relative z-10 py-5 sm:py-10 md:py-32 px-5'>
                 <div>
                     <Image alt='team' src={Team} className='hidden md:flex  w-[1500px]' />

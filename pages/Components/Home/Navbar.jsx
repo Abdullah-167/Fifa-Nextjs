@@ -22,7 +22,7 @@ const Navbar = () => {
                     <div className='links text-[#FFFFFF] text-base'>
                         <Link href='/'> <span className='hover:text-[#287FB8] transition-all duration-400 mx-8  lg:mx-12'>Home</span> </Link>
                         <Link href='aboutus'> <span className='hover:text-[#287FB8] transition-all duration-400 mx-8  lg:mx-12'>About</span></Link>
-                        <Link href='myaccount'> <span className='hover:text-[#287FB8] transition-all duration-400 mx-8  lg:mx-12'>My Account</span></Link>
+                        <Link href='acedamyprogram'> <span className='hover:text-[#287FB8] transition-all duration-400 mx-8  lg:mx-12'>Acedamy Program</span></Link>
                         <Link href='contact'> <span className='hover:text-[#287FB8] transition-all duration-400 mx-8  lg:mx-12'>Contact</span> </Link>
                     </div>
                     <div className='flex gap-2 items-center bg-[#DA6A2A] hover:bg-transparent border-[#DA6A2A] border-[1px] transition-all duration-100 py-4 px-7 text-white text-base cursor-pointer'>

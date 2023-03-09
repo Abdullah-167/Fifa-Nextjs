@@ -19,9 +19,9 @@ const Footer = () => {
                     <div className='footer pt-16 md:pt-0'>
                         <h2 className='text-2xl text-white'>Company</h2>
                         <Link href='/'> <span className='text-xl py-2 text-gray-500 block cursor-pointer w-12'>Home</span> </Link>
-                        <Link href='about'> <span className='text-xl py-2 text-gray-500 block cursor-pointer w-12'>About</span> </Link>
+                        <Link href='aboutus'> <span className='text-xl py-2 text-gray-500 block cursor-pointer w-12'>About</span> </Link>
                         <Link href='contact'> <span className='text-xl py-2 text-gray-500 block cursor-pointer w-16'>Contact</span></Link>
-                     <Link href='myaccount'> <span className='text-xl py-2 text-gray-500 block cursor-pointer w-18'>My Account</span> </Link>
+                        <Link href='acedamyprogram'> <span className='hover:text-[#287FB8] transition-all duration-400 mx-8  lg:mx-12'>Acedamy Program</span></Link>
                     </div>
                     <div className='pt-16 md:pt-0'>
                         <h2 className='text-2xl text-white md:text-center'>Social</h2>

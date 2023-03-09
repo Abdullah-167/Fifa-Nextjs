@@ -1,72 +1,49 @@
 import Image from 'next/image'
-import React from 'react'
 import Cup1 from '../../../../public/assets/cup1.png'
 import Cup2 from '../../../../public/assets/cup2.png'
 import Cup3 from '../../../../public/assets/cup3.png'
-import { SlArrowLeft } from 'react-icons/sl';
-import { SlArrowRight } from 'react-icons/sl';
+
 
 const OurAwards = () => {
-    return (
-        <div className='bg-[#F5F6F9]'>
-            <div>
-                <div>
-                    <h1 className='text-[#000000]'>Our Awards</h1>
-                </div>
-                <div className='flex md:hidden gap-5 justify-center pt-3 sm:pt-5'>
-                    <span
-                        className="text-white hover:text-[#DA6A2A] transition-all duration-200 bg-gray-100 bg-opacity-10 text-2xl sm:text-3xl p-2 sm:p-3 cursor-pointer"
 
-                    >
-                        <SlArrowLeft />
-                    </span>
-                    <span class='text-white hover:text-[#DA6A2A] transition-all duration-200 bg-gray-100 bg-opacity-10 text-2xl sm:text-3xl p-2 sm:p-3 cursor-pointer' ><SlArrowRight /> </span>
+
+    const trophy = [{
+        cup: Cup1,
+        title: '2015 World Cup Champion'
+    },
+    {
+        cup: Cup2,
+        title: '2016 World Cup Champion'
+    }, {
+        cup: Cup3,
+        title: '2018 World Cup Champion'
+    },];
+
+    return (
+        <div className='bg-[#F5F6F9] py-10'>
+            <div className='container px-5'>
+                <div>
+                    <div>
+                        <h1 className='text-[#000000] text-3xl sm:text-5xl font-bold'>Our Awards</h1>
+                    </div>
                 </div>
-            </div>
-            <div className='flex gap-10'>
-                {trophy.map((items, index) => {
-                    return (
-                        <div key={index}>
-                            <div>
-                                <Image alt='image' src={items.cup} width={400} />
-                                <p className='text-xl text-center pt-3'>{items.title}</p>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center pt-5'>
+                    {trophy.map((items, index) => {
+                        return (
+                            <div key={index}>
+                                <div>
+                                    <div className='flex justify-center'>
+                                        <Image alt='image' src={items.cup} className='max-w-[300px]' />
+                                    </div>
+                                    <p className='text-xl text-center pt-3'>{items.title}</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        );
+                    })}
+                </div>
             </div>
         </div>
     )
 }
 
 export default OurAwards
-
-
-
-
-const trophy = [{
-    cup: Cup1,
-    title: '2015 World Cup Champion'
-},
-{
-    cup: Cup1,
-    title: '2016 World Cup Champion'
-}, {
-    cup: Cup2,
-    title: '2017 World Cup Champion'
-}, {
-    cup: Cup2,
-    title: '2018 World Cup Champion'
-}, {
-    cup: Cup3,
-    title: '2019 World Cup Champion'
-}, {
-    cup: Cup1,
-    title: '2020 World Cup Champion'
-}, {
-    cup: Cup1,
-    title: '2021 World Cup Champion'
-}, {
-    cup: Cup2,
-    title: '2022 World Cup Champion'
-},]

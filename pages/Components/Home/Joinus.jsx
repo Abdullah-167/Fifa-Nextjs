@@ -17,33 +17,33 @@ const Joinus = () => {
 
                     </div>
                     <div className='lg:block sm:flex block justify-center gap-2'>
-                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all transform hover:-translate-y-2'>
+                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all duration-500 transform hover:-translate-y-2'>
                             <span className=' text-5xl text-[#DA6A2A]'><FcBusinessman /></span>
                             <div>
                                 <h2 className='text-xl pt-3 font-bold'>Professional Coach</h2>
                                 <p className=' text-sm font-thin text-[#1A1C1F]'>Potenti orci eu sagittis vestibulum sapien laoreet rutrum sociosqu lacus vulputate pretium</p>
                             </div>
                         </div>
-                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all transform hover:-translate-y-2'>
+                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all duration-500 transform hover:-translate-y-2'>
                             <span className=' text-5xl text-[#DA6A2A]'><BsFillBuildingsFill /></span>
                             <div>
-                                <h2 className='text-xl pt-3 font-bold'>Professional Coach</h2>
+                                <h2 className='text-xl pt-3 font-bold'>Amenities</h2>
                                 <p className=' text-sm font-thin text-[#1A1C1F]'>Potenti orci eu sagittis vestibulum sapien laoreet rutrum sociosqu lacus vulputate pretium</p>
                             </div>
                         </div>
                     </div>
                     <div className='lg:block sm:flex block justify-center gap-2'>
-                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all transform hover:-translate-y-2'>
+                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all duration-500 transform hover:-translate-y-2'>
                             <span className=' text-5xl text-[#DA6A2A]'><RiStarSmileFill /></span>
                             <div>
-                                <h2 className='text-xl pt-3 font-bold'>Professional Coach</h2>
+                                <h2 className='text-xl pt-3 font-bold'>Prestigious Club</h2>
                                 <p className=' text-sm font-thin text-[#1A1C1F]'>Potenti orci eu sagittis vestibulum sapien laoreet rutrum sociosqu lacus vulputate pretium</p>
                             </div>
                         </div>
-                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all transform hover:-translate-y-2'>
+                        <div className='joinus-shadow flex items-center gap-4 bg-white px-6 py-12 m-6 transition-all duration-500 transform hover:-translate-y-2'>
                             <span className=' text-5xl text-[#DA6A2A]'><MdSupportAgent /></span>
                             <div>
-                                <h2 className='text-xl pt-3 font-bold'>Professional Coach</h2>
+                                <h2 className='text-xl pt-3 font-bold'>Support</h2>
                                 <p className=' text-sm font-thin text-[#1A1C1F]'>Potenti orci eu sagittis vestibulum sapien laoreet rutrum sociosqu lacus vulputate pretium</p>
                             </div>
                         </div>

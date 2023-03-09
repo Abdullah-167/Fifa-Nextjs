@@ -220,7 +220,49 @@ body {
 
 
 
+.contact-header {
+  position: relative;
+  background-image: url(../public/assets/stadium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
 
+.contact-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  /* adjust the opacity as needed */
+}
+
+
+
+.acedamy-header {
+  position: relative;
+  background-image: url(../public/assets/playing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+.acedamy-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  /* adjust the opacity as needed */
+}
 
 
 
@@ -271,5 +313,11 @@ body {
 
   .bg-img2 {
     height: 120vh;
+  }
+  .contact-header {
+     height: 60vh;
+  }
+  .acedamy-header{
+    height: 50vh;
   }
 }
