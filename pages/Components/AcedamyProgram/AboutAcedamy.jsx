@@ -17,7 +17,7 @@ const AboutAcedamy = () => {
                     <div className='flex gap-2 mt-7 items-center hover:text-[#DA6A2A] bg-[#DA6A2A] hover:bg-transparent border-[#DA6A2A] border-[1px] transition-all duration-200 py-3 px-8 text-white text-base cursor-pointer w-[210px]'>
                         <button>Join Our Team</button>
                         <span className='text-2xl'>
-                            {<BsArrowRightShort />}
+                            <BsArrowRightShort />
                         </span>
                     </div>
                 </div>

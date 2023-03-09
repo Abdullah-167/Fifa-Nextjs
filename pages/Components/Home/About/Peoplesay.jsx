@@ -20,7 +20,7 @@ const Peoplesay = () => {
                                 <p className=' font-thin pl-4'>{items.para}</p>
                                 <span className='flex justify-end'><FaQuoteRight /></span>
                                 <div className='flex gap-3 items-center pl-4 pt-10'>
-                                    <Image src={items.img} className='max-w-[200px]' />
+                                    <Image alt='one' src={items.img} className='max-w-[200px]' />
                                     <div>
                                         <span className='font-bold'>{items.title}</span>
                                         <p>{items.work}</p>
