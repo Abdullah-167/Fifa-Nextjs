@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import { BsArrowRightShort } from 'react-icons/bs';
+import  BsArrowRightShort  from 'react-icons/bs';
 import Players from '../../../public/assets/players.jpg'
 const AboutAcedamy = () => {
 
