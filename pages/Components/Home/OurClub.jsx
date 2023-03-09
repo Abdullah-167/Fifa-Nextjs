@@ -8,7 +8,7 @@ const OurClub = ({bgImage }) => {
         <div className='bg-img2' style={{ backgroundImage: `url(${bgImage})` }}>
             <div className='container flex flex-wrap md:flex-nowrap gap-20 md:items-center justify-between relative z-10 py-5 sm:py-10 md:py-32 px-5'>
                 <div>
-                    <Image src={Team} className='hidden md:flex  w-[1500px]' />
+                    <Image alt='team' src={Team} className='hidden md:flex  w-[1500px]' />
                 </div>
                 <div>
                     <span className='font-bold text-base text-[#DA6A2A]'>OUR CLUB</span>

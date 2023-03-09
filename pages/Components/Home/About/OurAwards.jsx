@@ -28,7 +28,7 @@ const OurAwards = () => {
                     return (
                         <div key={index}>
                             <div>
-                                <Image src={items.cup} width={400} />
+                                <Image alt='image' src={items.cup} width={400} />
                                 <p className='text-xl text-center pt-3'>{items.title}</p>
                             </div>
                         </div>

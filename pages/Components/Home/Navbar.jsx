@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='bg-[#0E1E32] py-1 px-5'>
             <div className='container hidden md:flex justify-between'>
                 <div>
-                    <Image src={Logo} width={120} />
+                    <Image alt='logo' src={Logo} width={120} />
                 </div>
                 <div className='flex items-center justify-between gap-8 lg:gap-20'>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
 
             <div className='container flex md:hidden justify-between'>
                 <div>
-                    <Image src={Logo} width={120} />
+                    <Image alt='logo' src={Logo} width={120} />
                 </div>
                 <div className='flex items-center justify-between gap-5'>
                     <div className='hidden sm:flex gap-2 items-center bg-[#DA6A2A] hover:bg-transparent border-[#DA6A2A] border-[1px] transition-all duration-100 py-2 px-4 text-white text-base cursor-pointer'>
