@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
-import  BsArrowRightShort  from 'react-icons/bs';
 import Players from '../../../public/assets/players.jpg'
-const AboutAcedamy = () => {
 
+const AboutAcedamy = () => {
     return (
         <div className='container py-20'>
             <div className='flex justify-center flex-wrap lg:flex-nowrap  gap-10 px-5'>
@@ -14,11 +13,8 @@ const AboutAcedamy = () => {
                         metus vel massa. Risus ad felis class consectetur interdum
                         erat convallis volutpat pulvinar nunc. Justo dignissim eu a
                         euismod torquent finibus porta lobortis eros.</p>
-                    <div className='flex gap-2 mt-7 items-center hover:text-[#DA6A2A] bg-[#DA6A2A] hover:bg-transparent border-[#DA6A2A] border-[1px] transition-all duration-200 py-3 px-8 text-white text-base cursor-pointer w-[210px]'>
+                    <div className='flex gap-2 mt-7 items-center hover:text-[#DA6A2A] bg-[#DA6A2A] hover:bg-transparent border-[#DA6A2A] border-[1px] transition-all duration-200 py-3 px-8 text-white text-base cursor-pointer w-[170px]'>
                         <button>Join Our Team</button>
-                        <span className='text-2xl'>
-                            <BsArrowRightShort />
-                        </span>
                     </div>
                 </div>
                 <div>
